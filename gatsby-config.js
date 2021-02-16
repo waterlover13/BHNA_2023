@@ -60,6 +60,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Lusitana\:400,700`,
           `libre caslon text\:400,700`,
           `noto sans\:400,400i,700` // you can also specify font weights and styles
         ],

@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Wrapper } from "./Navigation.styles"
+import { NavWrapper } from "./Navigation.styles"
 
 const Navigation = ({ menu }) => (
-    <Wrapper>
+    <NavWrapper>
         <ul>
            {menu.map( mainItem => 
                !mainItem.parentId ? (
@@ -13,10 +13,10 @@ const Navigation = ({ menu }) => (
                         {mainItem.childItems.nodes.length !== 0 && <div>&#8964;</div>}
                     </Link>
                     {mainItem.childItems.nodes.length !== 0 ? (
-                        <ul>
+                        <ul className="dropdown-nav">
                             {mainItem.childItems.nodes.map(childItem => (
                                 <li key={childItem.id}>
-                                    <Link to={childItem.url} activeClassName="nav-active">
+                                    <Link to={childItem.url} className="dropdown-nav__item" activeClassName="nav-active">
                                         {childItem.label}
                                     </Link>
                                 </li>
@@ -27,7 +27,7 @@ const Navigation = ({ menu }) => (
                ) : null
            )}
         </ul>
-    </Wrapper>
+    </NavWrapper>
 )
 
 export default Navigation

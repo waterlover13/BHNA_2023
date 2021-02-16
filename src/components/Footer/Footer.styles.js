@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
+   grid-column: 2 / span 12;
+  
   display: flex;
   align-items: center;
   justify-content: center;

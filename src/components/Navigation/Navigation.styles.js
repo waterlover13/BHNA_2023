@@ -1,26 +1,28 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.nav`
+export const NavWrapper = styled.nav`
   font-family: 'Lusitana', serif;
-  
-  color: #212121;
+  color:  ${props => props.theme.colors.dark1};
   font-size: 1rem;
   font-weight: 600;
-  /* letter-spacing: 0.5px; */
+  letter-spacing: 0.3px;
   display: none;
 
   .nav-active {
     color: #ee2562;
   }
 
-  @media (min-width: 992px) {
-    font-size: 0.85rem;
-    display: block;
-  }
 
+  @media ${props => props.theme.breakpoints.tablet} {
+    font-size: 1rem;
+    display: block;
+    } 
+
+
+/* 
   @media (min-width: 1200px) {
     font-size: 1rem;
-  }
+  } */
 
   ul li {
     display: block;
@@ -34,7 +36,7 @@ export const Wrapper = styled.nav`
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
       text-decoration: none;
-      color: #000;
+      color:  ${props => props.theme.colors.light1};
 
       div {
         margin: -4px 0 0 5px;
@@ -51,7 +53,7 @@ export const Wrapper = styled.nav`
   }
 
   ul li a:hover {
-    color: #ee2562;
+    color: ${props => props.theme.colors.active1};
   }
 
   ul ul {
@@ -60,22 +62,32 @@ export const Wrapper = styled.nav`
     position: absolute;
     left: 0;
     margin: 0;
-    top: 30px;
+    top: 24px;
     text-transform: none;
+    border-radius: 4px;
     background: #fff;
-    padding: 15px 10px 10px 10px;
+    padding: 10px 12px 12px 10px;
     box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
   }
 
   ul ul li {
     width: auto;
     min-width: 170px;
+    height: 100%;
   }
 
   ul ul li a {
-    padding: 5px 10px;
+    padding: 10px 10px;
     text-decoration: none;
     white-space: nowrap;
+  }
+
+  ul ul li a:hover {
+    color: ${props => props.theme.colors.active2};
+  } 
+
+  .dropdown-nav__item {
+    color: ${props => props.theme.colors.dark2};
   }
 
   @keyframes fadeInMenu {
