@@ -8,6 +8,7 @@ export const HamburgerIcon = styled.div`
     position: absolute;
     right: 0;
     margin: 40px auto;
+    
 
     :after,
     :before,
@@ -44,5 +45,5 @@ export const HamburgerIcon = styled.div`
 `
 
 export const HamburgerWrapper = styled.div`
-
+      position: relative;
 `

@@ -18,15 +18,14 @@ const Layout = ({ children }) => {
         <>
         <GlobalStyles />
         <ThemeProvider theme={Theme}>
-        
-        {/* <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <OverlayMenu menuOpen={menuOpen} /> */}
-        <NationalRegister />
+        <NationalRegister /> 
+        <ContainerWrapper>
         <Header />
         <Primary>
             {children}
         </Primary>
         <Footer />
+        </ContainerWrapper>
         </ThemeProvider>
         
         </>

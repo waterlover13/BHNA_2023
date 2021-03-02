@@ -1,24 +1,25 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
-  background: ${props => props.theme.colors.dark1};
+  
   height: 110px;
-  border-bottom: 1px solid #e7e7e7;
+  padding: 0 20px;
   width: 100%;
   z-index: 3;
-  
-  
- 
-  
-  
+  position: absolute;
 
   @media ${props => props.theme.breakpoints.tablet2} {
-   
+    position: relative;
+    background-color: ${props => props.theme.colors.main1};
   }
+  
 
 `;
 
 export const Content = styled.div`
+  max-width: 1280px;
+  
+  margin: 0 auto;
   
   display: flex;
   justify-content: space-between;
@@ -44,6 +45,7 @@ export const Content = styled.div`
 
   img {
     width: 140px;
+    
     
   }
 
@@ -102,6 +104,9 @@ export const Content = styled.div`
 
 
     @media ${props => props.theme.breakpoints.tablet2} {
+      
+    
+
     .bhna-branding {
       
       /* flex-direction: column;
@@ -121,6 +126,10 @@ export const Content = styled.div`
       .sm-line {
         display: none;
       }  
+    }
+
+    @media ${props => props.theme.breakpoints.desktop} {
+      max-width: 1060px;
     } 
 `;
 

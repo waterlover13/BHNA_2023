@@ -7,6 +7,7 @@ export const NavWrapper = styled.nav`
   font-weight: 600;
   letter-spacing: 0.3px;
   display: none;
+  
 
   .nav-active {
     color: #ee2562;
