@@ -3,32 +3,18 @@ import styled from "styled-components"
 
 
 export const Wrapper = styled.div`
-   max-width: 1280px;
-   margin: 0 auto;
-   /* padding: 20px 0; */
-  
-
-   @media ${props => props.theme.breakpoints.desktop} {
-      max-width: 1060px;
-    } 
- 
+  padding: 0 24px;
+  width: 100%;
+   
    @media ${props => props.theme.breakpoints.tablet2} {
-    margin: 0 auto;
-    /* padding: 20px 0; */
+    margin: 0 auto; 
   }
-
-  @media screen and (max-width: 768px) {
-      padding: 0 20px 0 20px;
-      
-    }
 `
 
 export const ContentWrapper = styled.div`
-  /* display: block; */
-/*   
-  display: flex ; 
-  flex-direction: row; */
-  
+ 
+  max-width: 1280px;
+   margin: 0 auto;
 
   @media (min-width: 992px) {
     display: flex;
@@ -36,14 +22,22 @@ export const ContentWrapper = styled.div`
 `
 
 export const PageContent = styled.div`
+  /* max-width: 1280px;
+   margin: 0 auto; */
+   /* padding: 2rem 24px; */
+
+   /* padding: 2rem 24px 0 24px; */
+
   
 
 `
 
 
 export const Content = styled.div`
+ 
+   
 
-  /* padding: 2rem 0; */
+  /* padding: 2rem 24px; */
 
   a:-webkit-any-link {
     color: #687C15;
@@ -78,6 +72,16 @@ export const Content = styled.div`
         }
       }
     }
+  }
+
+  .shop-details {
+    width: 40%; 
+    padding-bottom: 1rem; 
+    padding-top: 2.5rem; 
+
+    @media ${props => props.theme.breakpoints.tablet2} {
+      width: 80%;
+       }
   }
 
     .tour-cover {
@@ -159,100 +163,14 @@ export const Content = styled.div`
         grid-column: 1 ;
     }
 
-    .img-side {
-        /* grid-column:  2;
-        max-width: 500px;
-        max-height: 0;
-        text-align: center; */
     
-        @media ${props => props.theme.breakpoints.tablet2} {
-            /* grid-column:  1;
-            width: 100%;
-            max-width: 200px;
-            max-height: 100%; */
-       }
-
-       @media screen and (max-width: 768px) {
-        /* max-width: 380px;
-        width: 100%; */
-        /* padding: 0 2em; */
-        /* margin: 0 auto; */
-      
-    }
-        
-    }
-
-    
-        
     
     h3 {
       font-family: "Libre Caslon Text", serif;
       font-size: 1.5rem;
     }
 
-    p {
-     /* font-size:1rem;
-     margin-bottom: 2rem; */
-    }
-
-    .shop {
-        max-width: 1280px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-
-        .img__shop{
-            width: 300px;
-            border: 1px solid #eee;
-            background-color: whitesmoke;
-            padding: 20px 15px;
-            margin-right: 20px;
-        }
-    }
-   
-
-    .col-shop {
-        display: flex;
-        flex-direction: row;
-        
-        /* justify-content: center; */
-        /* align-content: center; */
-        /* background-color: peru; */
-        
-        /* max-width: 1080px; */
-       
-        
-        
-
-
-        .img-product {
-            width: 100%;
-            max-width: 340px;
-            padding: 20px 15px;
-            border: 1px solid #eee;
-            background-color: whitesmoke;
-            height: 480px;
-            /* min-height: 300px; */
-            margin-right: 80px;  
-            display: flex;
-            flex-direction: column;
-            justify-content: center; 
-            align-content: center;
-           
-        }
-
-        .price-product {
-            color: gray;
-            max-width: 300px;
-            padding: 10px 25px;
-        }
-
-    }
-
-
-  
-  
-
+    
  
 
 `

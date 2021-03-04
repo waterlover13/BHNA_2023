@@ -32,7 +32,7 @@ export const StyledImg = styled(GatsbyImage)`
 
 export const Wrapper = styled.div`
 
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   
   
   @media (min-width: 768px) {
@@ -65,5 +65,5 @@ font-size: 1.3rem;
 
 export const ProductDetails = styled.div`
   display: flex;
-  padding: 0.5rem 1rem ;
+  padding: 0.5rem 1.2rem ;
 `

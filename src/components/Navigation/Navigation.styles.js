@@ -10,7 +10,7 @@ export const NavWrapper = styled.nav`
   
 
   .nav-active {
-    color: #ee2562;
+    color: ${props => props.theme.colors.active1};
   }
 
 
@@ -38,11 +38,12 @@ export const NavWrapper = styled.nav`
       transition: all 0.2s ease;
       text-decoration: none;
       color:  ${props => props.theme.colors.light1};
-
+      
       div {
         margin: -4px 0 0 5px;
       }
     }
+   
   }
 
   ul li:last-child {
@@ -54,7 +55,7 @@ export const NavWrapper = styled.nav`
   }
 
   ul li a:hover {
-    color: ${props => props.theme.colors.active1};
+    color: ${props => props.theme.colors.active2};
   }
 
   ul ul {
@@ -69,17 +70,23 @@ export const NavWrapper = styled.nav`
     background: #fff;
     padding: 10px 12px 12px 10px;
     box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
+    .nav-active {
+    color: ${props => props.theme.colors.active2};
+    }
+    
   }
 
   ul ul li {
     width: auto;
     min-width: 170px;
     height: 100%;
+    text-align: center;
   }
 
   ul ul li a {
     padding: 10px 10px;
     text-decoration: none;
+    text-align: center;
     white-space: nowrap;
   }
 

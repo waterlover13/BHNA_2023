@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
 export const JoinWrapper = styled.section`
-   
-
     padding: 4.4rem 0;
 
     background-color: ${props => props.theme.colors.secondary};

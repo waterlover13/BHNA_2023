@@ -8,7 +8,7 @@ const Navigation = ({ menu }) => (
            {menu.map( mainItem => 
                !mainItem.parentId ? (
                 <li key={mainItem.id}>
-                    <Link to={mainItem.url} activeClassName="mnav-active">
+                    <Link to={mainItem.url} activeClassName="nav-active">
                         {mainItem.label}
                         {mainItem.childItems.nodes.length !== 0 && <div>&#8964;</div>}
                     </Link>

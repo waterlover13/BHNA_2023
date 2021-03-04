@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px;
+  margin: 0 auto; */
   margin-top: 20px;
   /* padding: 0 20px; */
   
@@ -18,6 +18,6 @@ export const Wrapper = styled.div`
 
   @media ${props => props.theme.breakpoints.tablet2} {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    /* padding: 0 20px; */
   }
 `;

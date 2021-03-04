@@ -2,33 +2,35 @@ import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export const Wrapper = styled.div`
-     max-width: ${props => props.theme.max.large};
+     
+   padding: 0 24px;
+    
+`
+
+export const Content = styled.div`
+max-width: ${props => props.theme.max.large};
    margin: 4rem auto;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 2rem;
     grid-template-areas:
               "L R"
               "L ."
               "L ."
-              ". .";  ;
+              ". .";  
 
-   @media ${props => props.theme.breakpoints.desktop} {
+    @media ${props => props.theme.breakpoints.tablet2} {
     grid-template-columns: 1fr;
     grid-template-areas:
               "T"
               "."
               "."
               ".";  
-    max-width: ${props => props.theme.max.medium};
-  }
 
-    @media ${props => props.theme.breakpoints.tablet2} {
-    grid-template-columns: 1fr;
+    max-width: ${props => props.theme.max.medium};
    
-    padding: 0 20px;
+   
   }
-    
 `
 
 
@@ -53,12 +55,6 @@ export const ContentCopy = styled.div`
   grid-column: 1;
   grid-area: L;
 
-  @media ${props => props.theme.breakpoints.desktop} {
-    display: block;
-    grid-area: auto;
-    max-width: ${props => props.theme.max.medium};
-  }
-
     @media ${props => props.theme.breakpoints.tablet2} {
       display: block;
       grid-area: auto;
@@ -71,12 +67,7 @@ export const ContentImg = styled.div`
     grid-column: 2;
   grid-area: R;
 
-  @media ${props => props.theme.breakpoints.desktop} {
-    grid-column: 1;
-    grid-area: T;
-    max-width: 80%;
-    
-  }
+
 
     @media ${props => props.theme.breakpoints.tablet2} {
       grid-column: 1;
@@ -90,12 +81,7 @@ export const ContentImg3 = styled.div`
     grid-column: 2;
   grid-area: ".";
 
-  @media ${props => props.theme.breakpoints.desktop} {
-    grid-column: 1;
-    grid-area: T;
-    max-width: 80%;
-    
-  }
+ 
 
     @media ${props => props.theme.breakpoints.tablet2} {
       grid-column: 1;

@@ -6,10 +6,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   background: #FAFAFA;
-  
+  padding: 0 0 0 24px;
+  /* margin: 0  auto; */
 
   @media ${props => props.theme.breakpoints.tablet2} {
     flex-direction: column;
+    padding: 0 ;
+    margin: 0 ;
   }
   
   
@@ -32,10 +35,23 @@ export const Wrapper = styled.div`
 `;
 
 export const AboutText = styled.div`
-  max-width: 1280px;
+  
+  /* max-width: 616px;
+  margin: 0 24px 0 auto; */
+  /* max-width: 1280px; */
+  /* padding: 64px 24px;
+  max-width: 680px; */
+  
+  /* margin: 0 2rem 0 auto; */
+  /* margin: 0 8% 0 auto;
+  width: 50%;
+  max-width: 540px;
+  padding: 64px 24px; */
+
+  padding: 72px 24px;
+  width: 70%;
+  max-width: 520px;
   margin: 0 auto;
-  width: 600px;
-  padding: 64px 0;
 
   .history-text {
     margin-bottom: 2.3rem;
@@ -57,16 +73,16 @@ export const AboutText = styled.div`
       color: whitesmoke;
   }
 
-  @media ${props => props.theme.breakpoints.desktop} {
-      max-width: 1060px;
-      width: 320px;
-      margin: 0 100px 0 auto;
-    } 
+ 
 
     @media ${props => props.theme.breakpoints.tablet2} {
       width: 100%;
-      padding: 64px 20px;
-      margin-bottom: 2rem;
+      margin: 1rem auto 2rem 0;
+      
+      /* margin: 1rem auto 2rem 0; */
+      padding: 56px 24px;
+      /* margin:  auto 0; */
+      max-width: 88%;
   }
 `
 
@@ -75,9 +91,11 @@ export const ImgWrapper = styled.div`
   background-image: ${({ image }) => `url(${image})`};
   background-size: cover;
   background-position: center;
-  width: 680px;
-  max-width: 800px;
-  min-height: 300px;
+  
+  width: 100%;
+  max-width: 832px;
+  /* max-width: 800px;
+  min-height: 300px; */
   
   @media ${props => props.theme.breakpoints.tablet2} {
       width: 100%;

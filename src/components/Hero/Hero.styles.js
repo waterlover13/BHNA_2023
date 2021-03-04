@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 export const StyledImg = styled(GatsbyImage)`
   max-height: 760px;
-  /* margin-bottom: 60px; */
+  margin-bottom: 0;
 
   @media ${props => props.theme.breakpoints.tablet2} {
     max-height: 100%;
@@ -24,22 +24,21 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-  max-width: 1280px;
-  /* padding: 0 20px; */
+  max-width: ${props => props.theme.max.large};
+  /* padding: 0 24px; */
   margin: 0 auto;
 
-  @media ${props => props.theme.breakpoints.desktop} {
-      max-width: 1060px;
-    } 
+ 
 
     @media ${props => props.theme.breakpoints.tablet2} {
     /* max-height: 824px; */
-    padding: 0 20px;
+    padding: 0 24px;
+    
   }
 `
 
 export const HeaderWrapper = styled.div`
-
+  
   background: linear-gradient(180deg, rgba(0,0,0,.8), rgba(32, 31, 31, .5) 100%); 
   position: absolute;
   top: 0;
@@ -51,15 +50,15 @@ export const HeaderWrapper = styled.div`
   height: 100%;
   width: 100%;
   max-height: 760px;
+
+  font-family: ${props => props.theme.fonts.main};
+  color: #fff;
   
   @media ${props => props.theme.breakpoints.tablet2} {
     max-height: 100%;
-    height: 700px;
+    height: 100%;
   }
  
-  
-  font-family: ${props => props.theme.fonts.main};
-  color: #fff;
 
   h1 {
     font-size: 3.5rem;
@@ -78,13 +77,6 @@ export const HeaderWrapper = styled.div`
     @media ${props => props.theme.breakpoints.desktop2} {
       font-size: 5.5rem;
     } 
-
-   
-
-    /* @media screen and (min-width: 768px) {
-      font-size: 5.5rem;
-      
-    } */
   }
 
   h3 {

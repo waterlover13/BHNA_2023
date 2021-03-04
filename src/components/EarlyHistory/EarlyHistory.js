@@ -2,7 +2,7 @@ import React from "react"
 
 import { useEarlyHistoryQuery } from "../../hooks/useEarlyHistoryQuery"
 import { getImage } from "gatsby-plugin-image"
-import { Wrapper, StyledImg, ContentCopy, ContentImg, P, H3 } from "./EarlyHistory.styles"
+import { Wrapper, StyledImg, Content, ContentCopy, ContentImg, P, H3 } from "./EarlyHistory.styles"
 
 const EarlyHistory = () => {
     const {
@@ -14,6 +14,7 @@ const EarlyHistory = () => {
     return (
 
         <Wrapper>
+        <Content>
             <ContentCopy>
         <H3>{data.title1}</H3>
         <P>{data.para1}</P>
@@ -48,6 +49,7 @@ const EarlyHistory = () => {
        <ContentImg>
        <StyledImg image={imgData} alt="something" />
        </ContentImg>
+       </Content>
         </Wrapper>
     )
 }

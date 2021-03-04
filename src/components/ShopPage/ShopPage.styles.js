@@ -8,7 +8,11 @@ import styled from "styled-components"
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   max-width: 1280px;
-  margin: 3rem auto 5rem auto;
+  margin: 0 auto 2rem auto;
+  padding-top: 2rem;
+
+ 
+  
   
   @media ${props => props.theme.breakpoints.tablet2} {
    

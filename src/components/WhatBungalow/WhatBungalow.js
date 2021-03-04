@@ -2,7 +2,7 @@ import React from "react"
 
 import { useWhatisBungalowQuery } from "../../hooks/useWhatisBungalowQuery"
 import { getImage } from "gatsby-plugin-image"
-import { Wrapper,StyledImg, ContentCopy, ContentImg, ContentImg3, P } from "./WhatBungalow.styles"
+import { Wrapper,StyledImg, Content, ContentCopy, ContentImg, ContentImg3, P } from "./WhatBungalow.styles"
 
 const WhatBungalow = () => {
     const {
@@ -15,6 +15,7 @@ const WhatBungalow = () => {
 
     return (
         <Wrapper>
+        <Content>
         <ContentCopy>
         <P>{data.para1}</P>
         <P>{data.para2}</P>
@@ -40,7 +41,7 @@ const WhatBungalow = () => {
        <ContentImg3>
        <StyledImg image={imgData3} alt="something" />
        </ContentImg3>
-
+       </Content>
         </Wrapper>
     )
 }

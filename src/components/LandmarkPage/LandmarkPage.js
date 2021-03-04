@@ -4,7 +4,7 @@ import { useLandmarkQuery } from "../../hooks/useLandmarkQuery"
 import LandmarkCover from "../LandmarkCover/LandmarkCover"
 
 import { getImage } from "gatsby-plugin-image"
-import { StyledImg, InnerWrapper, H3, P, FAQ } from "./LandmarkPage.styles"
+import { Wrapper, StyledImg, InnerWrapper, H3, P, FAQ } from "./LandmarkPage.styles"
 
 
 const LandmarkPage = () => {
@@ -16,11 +16,10 @@ const LandmarkPage = () => {
    const imgData2 = getImage(data.landmarkImage2.localFile);
 
     return (
-        <div>
-             
-             <LandmarkCover />
-
-            <InnerWrapper>
+        <>
+        <LandmarkCover />
+        <Wrapper>
+             <InnerWrapper>
             <StyledImg image={imgData2} alt="Pasadena City Hall" />
 
             <FAQ>
@@ -53,7 +52,8 @@ const LandmarkPage = () => {
             </FAQ>
             </InnerWrapper>
            
-        </div>
+        </Wrapper>
+        </>
     )
 }
 

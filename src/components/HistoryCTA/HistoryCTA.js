@@ -14,6 +14,7 @@ const CTAArea = () => {
 
     return (
         <Wrapper>
+            
             {new Array(3).fill("").map((element, i) => (
                 <CTA
                 key={i}

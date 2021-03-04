@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
-  
   height: 110px;
-  padding: 0 20px;
+  padding: 0 24px;
   width: 100%;
   z-index: 3;
   position: absolute;
@@ -17,8 +16,7 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const Content = styled.div`
-  max-width: 1280px;
-  
+  max-width: ${props => props.theme.max.large};
   margin: 0 auto;
   
   display: flex;
@@ -105,14 +103,6 @@ export const Content = styled.div`
 
     @media ${props => props.theme.breakpoints.tablet2} {
       
-    
-
-    .bhna-branding {
-      
-      /* flex-direction: column;
-      justify-content: flex-start;
-      align-content:flex-start; */
-    }
 
     img {
       width: 120px;
@@ -128,8 +118,8 @@ export const Content = styled.div`
       }  
     }
 
-    @media ${props => props.theme.breakpoints.desktop} {
+    /* @media ${props => props.theme.breakpoints.desktop} {
       max-width: 1060px;
-    } 
+    }  */
 `;
 

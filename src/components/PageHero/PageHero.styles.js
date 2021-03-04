@@ -7,7 +7,7 @@ export const StyledImg = styled(GatsbyImage)`
     background-position: top;
     object-position:  top; */
     max-width: 100%;
-    height: 360px; 
+    height: 348px; 
     min-height: 100%;
     
     img {
@@ -21,7 +21,7 @@ export const StyledImg = styled(GatsbyImage)`
 `
 
 export const Wrapper = styled.div`
-    /* display: block; */
+    
 
 
 `
@@ -31,14 +31,14 @@ export const PageWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 
   width: 100%;
-  height: 360px; 
+  height: 348px;  
   /* min-height: 100%; */
   
   
@@ -56,20 +56,23 @@ export const Content = styled.div`
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+ 
 
     h1 {
       font-family: ${props => props.theme.fonts.secondary};
       color: #fff;
-      font-size: 3rem;
+      font-size: 3.3rem;
+      margin-top: 3rem;
 
+      @media ${props => props.theme.breakpoints.tablet2} {
+        margin-top: 6rem;
+     } 
     }
 
-    @media ${props => props.theme.breakpoints.desktop} {
+    /* @media ${props => props.theme.breakpoints.desktop} {
       max-width: 1060px;
-      }
+      } */
 
-       @media ${props => props.theme.breakpoints.tablet2} {
-      padding: 0 20px;
-      } 
+     
 
 `
