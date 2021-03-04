@@ -1,5 +1,5 @@
 import React from "react"
-
+import SEO from "../seo"
 import { useWhatisBungalowQuery } from "../../hooks/useWhatisBungalowQuery"
 import { getImage } from "gatsby-plugin-image"
 import { Wrapper,StyledImg, Content, ContentCopy, ContentImg, ContentImg3, P } from "./WhatBungalow.styles"
@@ -15,6 +15,7 @@ const WhatBungalow = () => {
 
     return (
         <Wrapper>
+        <SEO title="What is Bungalow Heaven?" />
         <Content>
         <ContentCopy>
         <P>{data.para1}</P>

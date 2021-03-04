@@ -2,7 +2,7 @@ import React from "react"
 import HistoryCTA from "../HistoryCTA/HistoryCTA"
 import HistoryAboutCTA from "../HistoryAboutCTA/HistoryAboutCTA"
 
-import { HistoryWrapper, HistoryCTAWrapper } from "./HistorySection.styles"
+import { HistoryWrapper, HistoryCTAWrapper, InnerWrappper } from "./HistorySection.styles"
 
 const HistorySection = () => {
 
@@ -12,11 +12,13 @@ const HistorySection = () => {
         <div>
         <HistoryAboutCTA />
         </div>
-
+        
+        <InnerWrappper>
         <HistoryCTAWrapper>
         <h2>Our History</h2>
         <HistoryCTA />
         </HistoryCTAWrapper>
+        </InnerWrappper>
         </HistoryWrapper> 
     )
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 
 import Layout from "../components/Layout/Layout"
 import PageHero from "../components/PageHero/PageHero"
@@ -14,6 +13,7 @@ import ShopPage from "../components/ShopPage/ShopPage"
 
 
 import { Content, Wrapper, ContentWrapper, PageContent } from "../styles/Page.styles"
+import BoDPage from "../components/BoDPage/BoDPage"
 
 
 
@@ -28,6 +28,7 @@ const PageTemplate = ({ data }) => {
   const uriLandmark = `/landmark-information/`
   const uriOrigins = `/our-history/origins/`
   const uriEarlyHistory = `/our-history/early-history/`
+  const uriBoD = `/about-us/board-of-directors/`
   const uriWhat = `/our-history/what-is-bhna/`
   const uriShop = `/shop/`
   
@@ -63,6 +64,10 @@ return (
 
           {data.wpPage.uri===uriWhat ? (
              <WhatBungalow />
+            ) : null }
+
+          {data.wpPage.uri===uriBoD ? (
+             <BoDPage />
             ) : null }
 
 

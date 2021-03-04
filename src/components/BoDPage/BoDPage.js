@@ -1,18 +1,13 @@
 import React from "react"
 import { Wrapper } from "./BoDPage.styles"
+import SEO from "../seo"
 
-import { useBoDQuery } from "../../hooks/useBoDQuery"
 
 const BoDPage = () => {
-    // const { 
-    //     wpPage: { AFC_BoD: data }
-    //  } = useBoDQuery();
-
-    const { bod } = useBoDQuery();
-     console.log(bod, "hey")
+ 
   return (
       <Wrapper>
-          <h1>{bod.ACF_BoD.blockRepresentatives}</h1>
+          <SEO title="Board of Directors" />  
       </Wrapper>
   )
 }

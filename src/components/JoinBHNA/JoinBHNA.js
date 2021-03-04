@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from "gatsby"
+
 
 import { useSupportQuery } from "../../hooks/useSupportQuery"
 
-import { JoinWrapper, Content, BTN, innerBTNWrapper  } from "./JoinBHNA.styles"
+import { JoinWrapper, Content, BTN,   } from "./JoinBHNA.styles"
 
 
-const JoinBHNA = ({ link }) => {
+const JoinBHNA = () => {
     const { support } = useSupportQuery();
     console.log(support, "support")
     return (
@@ -16,7 +16,7 @@ const JoinBHNA = ({ link }) => {
           
             <p>The Bungalow Heaven Neighborhood Association is a voice for our neighborhood in the City of Pasadena.  Please help continue this work by joining or renewing your membership in the Association.</p>
            
-           <innerBTNWrapper>
+           <div>
            <BTN>
             <a 
             className="support-btn" 
@@ -43,7 +43,7 @@ const JoinBHNA = ({ link }) => {
                 Support Today 
             </a>
             </BTN>
-            </innerBTNWrapper>
+            </div>
             </Content>
         </JoinWrapper>
     )

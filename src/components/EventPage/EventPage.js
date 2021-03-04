@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeTourCover from "../HomeTourCover/HomeTourCover"
-
+import SEO from "../seo"
 import { getImage } from "gatsby-plugin-image"
 import { useEventInfoQuery } from "../../hooks/useEventInfoQuery"
 
@@ -23,6 +23,7 @@ const EventPage = () => {
 
     return (
         <div>
+            <SEO title="Bungalow Heaven Home Tour" />  
             <HomeTourCover />
            
             <Wrapper>

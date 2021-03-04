@@ -138,7 +138,7 @@ export const HeaderWrapper = styled.div`
     max-height: 824px;
       
       h1 {
-      font-size: 4rem;
+      font-size: 4.4rem;
       }
 
       h3 {

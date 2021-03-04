@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../seo"
 
 import { useShopQuery } from "../../hooks/useShopQuery"
 
@@ -13,6 +14,7 @@ const ShopPage = () => {
 
     return (
         <Wrapper>
+        <SEO title="Shop" />
         {new Array(9).fill("").map((element, i) => (
             <Product 
             key={i}

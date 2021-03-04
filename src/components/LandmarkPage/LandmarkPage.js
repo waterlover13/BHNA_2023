@@ -1,4 +1,6 @@
 import React from "react"
+import SEO from "../seo"
+
 import { useLandmarkQuery } from "../../hooks/useLandmarkQuery"
 
 import LandmarkCover from "../LandmarkCover/LandmarkCover"
@@ -17,6 +19,7 @@ const LandmarkPage = () => {
 
     return (
         <>
+        <SEO title="Landmark Information" />
         <LandmarkCover />
         <Wrapper>
              <InnerWrapper>
@@ -44,9 +47,9 @@ const LandmarkPage = () => {
             <H3>{data.h3Question10}</H3>
             <P>{data.paragraph10}</P>
            
-            <P> <a href={data.paragraph10Link2} target="_blank">Historic Preservation - Planning & Community Development Department (cityofpasadena.net)</a></P>
+            <P> <a href={data.paragraph10Link2} target="_blank" rel="noreferrer">Historic Preservation - Planning & Community Development Department (cityofpasadena.net)</a></P>
             <P>{data.paragraph102}</P>
-            <P> <a href={data.paragraph10Link} target="_blank">Design Guidelines for Historic Districts</a></P>
+            <P> <a href={data.paragraph10Link} target="_blank" rel="noreferrer">Design Guidelines for Historic Districts</a></P>
            
             <P>{data.paragraph103}</P>
             </FAQ>

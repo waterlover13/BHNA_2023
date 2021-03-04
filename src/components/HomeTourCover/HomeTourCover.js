@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { useHomeTourQuery } from "../../hooks/useHomeTourQuery"
 import { Wrapper, StyledImg, TourDetails, Seperator } from "./HomeTourCover.styles"

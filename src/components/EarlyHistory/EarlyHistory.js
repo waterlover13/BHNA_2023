@@ -1,5 +1,5 @@
 import React from "react"
-
+import SEO from "../seo"
 import { useEarlyHistoryQuery } from "../../hooks/useEarlyHistoryQuery"
 import { getImage } from "gatsby-plugin-image"
 import { Wrapper, StyledImg, Content, ContentCopy, ContentImg, P, H3 } from "./EarlyHistory.styles"
@@ -14,6 +14,7 @@ const EarlyHistory = () => {
     return (
 
         <Wrapper>
+        <SEO title="Early History of Pasadena" />
         <Content>
             <ContentCopy>
         <H3>{data.title1}</H3>

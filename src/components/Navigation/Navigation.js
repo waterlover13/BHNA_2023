@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { NavWrapper } from "./Navigation.styles"
 
+
 const Navigation = ({ menu }) => (
     <NavWrapper>
         <ul>

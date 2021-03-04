@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Bungalow Heaven`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Bungalow Heaven Neighborhood Association`,
+    description: `Bungalow Heaven is a quiet, leafy, close-knit neighborhood of historic, early 20th century bungalow homes, many built during the Arts & Crafts period`,
     author: `Demi Minjarez`,
   },
   plugins: [

@@ -4,7 +4,9 @@ export const useBungalowOriginsQuery = () => {
     const data = useStaticQuery(graphql`
     query BungalowOrigins {
   wpPage(databaseId: {eq: 132}) {
+    uri
     ACF_BungalowOrigins {
+      description
       title1
       title2
       title3

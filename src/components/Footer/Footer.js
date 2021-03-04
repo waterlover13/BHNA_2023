@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Logo from "../../images/logo.svg"
 
-import { FooterWrapper, Content, FooterBranding, FooterDiv, ContactDiv, SocialIcons, P, DIV, Copyright } from "./Footer.styles"
+import { FooterWrapper, Content, FooterBranding, FooterDiv, SocialIcons, P, DIV, Copyright } from "./Footer.styles"
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import YouTubeIcon from '@material-ui/icons/Youtube';
@@ -54,13 +54,14 @@ const Footer = () => {
             </P>
 
             </DIV>
-            <DIV>     
+
+            {/* <DIV>     
             <h4>More Info</h4>
             <div className="line"></div>
             <Link to="/">
                 Term & Condition
             </Link>
-            </DIV>
+            </DIV> */}
 
             <DIV>     
             <h4>Follow Us</h4>

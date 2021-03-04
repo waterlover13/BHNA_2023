@@ -35,6 +35,7 @@ export const Content = styled.div`
 `
 
 
+
 export const StyledImg = styled(GatsbyImage)`
   /* max-height: 460px; */
   /* margin-bottom: 60px; */
@@ -56,11 +57,13 @@ export const ContentCopy = styled.div`
   grid-column: 1;
   grid-area: L;
 
-  /* @media ${props => props.theme.breakpoints.desktop} {
-    display: block;
-    grid-area: auto;
-    max-width: ${props => props.theme.max.medium};
-  } */
+    h2 {
+      font-size: 1.9rem;
+      line-height: 1.3;
+      
+      margin-bottom: 2rem;
+      color: ${props => props.theme.colors.dark1};
+    }
 
     @media ${props => props.theme.breakpoints.tablet2} {
       display: block;

@@ -12,21 +12,13 @@ export const Overlay = styled.div`
     right: ${props => (props.menuOpen ? "0" : "-100%")};
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #000000;
     z-index: 10;
     padding: 20px;
     transition: all 0.4s ease;
-    box-sizing: border-box;
-
-        /* @media screen and (min-width: 992px) {
-            display: none;
-        } */
-
-        /* @media ${props => props.theme.breakpoints.tablet} {
-            display: none;
-    }  */
-     
+    box-sizing: border-box;     
 `
+
 
 export const Nav = styled.ul`
     position: absolute;
@@ -39,9 +31,8 @@ export const Nav = styled.ul`
 
     .parentItem {
         display: flex;
-        /* justify-content: start;  */
-        /* align-items: center;
-        background-color: peru; */
+        flex-direction: column;
+
         
         .chevron {
             padding-left: 10px;
@@ -49,48 +40,15 @@ export const Nav = styled.ul`
         }
     }
 
-        .menu {
-            background: peru;
-            /* border-radius: 8px; */
-            /* position: absolute;
-            top: 60px;
-            right: 0; */
-            /* width: 300px; */
-            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-20px);
-            transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-            }
-
-        .menu-trigger {
-            background: #ffffff;
-            border-radius: 90px;
-            cursor: pointer;
-            /* display: flex;
-            justify-content: space-between;
-            align-items: center; */
-            padding: 4px 6px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-            border: none;
-            vertical-align: middle;
-            transition: box-shadow 0.4s ease;
-            /* margin-left: auto; Strictly for positioning */
-            }
-
-
-
-        .menu.active {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-       
-       
+    li li a {
+        color: whitesmoke;
+    }
 
     a {
         text-decoration: none;
-        color: white
+        color: white;
+        transition: all 0.3s ease;
+        letter-spacing: 0.2px;
     }
 
     li {
@@ -98,7 +56,14 @@ export const Nav = styled.ul`
         cursor: pointer;
         margin: 24px 16px;
         list-style-type: none;
-        
+    }
+
+    a:hover {
+     color: ${props => props.theme.colors.active2}; 
+    }
+
+    .child-item {
+        font-size: 1.7rem;
     }
 
     /* .dropdown-nav {

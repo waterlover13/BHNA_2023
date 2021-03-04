@@ -87,7 +87,7 @@ export const BTN = styled.div`
     
 `
 
-export const innerBTNWrapper = styled.div`
-    max-width: 300px;
+// export const InnerBtnWrapper = styled.div`
+//     max-width: 300px;
     
-`
+// `
