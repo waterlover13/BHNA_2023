@@ -25,14 +25,15 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   max-width: ${props => props.theme.max.large};
-  /* padding: 0 24px; */
+  padding: 1rem 24px;
   margin: 0 auto;
+  
 
  
 
     @media ${props => props.theme.breakpoints.tablet2} {
     /* max-height: 824px; */
-    padding: 0 24px;
+    /* padding: 0 24px; */
     
   }
 `
@@ -45,11 +46,12 @@ export const HeaderWrapper = styled.div`
   left: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: center;
   height: 100%;
   width: 100%;
   max-height: 760px;
+  /* padding: 4rem 24px; */
 
   font-family: ${props => props.theme.fonts.main};
   color: #fff;
@@ -61,7 +63,7 @@ export const HeaderWrapper = styled.div`
  
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 600;
     color: #fff;
     text-transform: none;
@@ -71,12 +73,13 @@ export const HeaderWrapper = styled.div`
     
     @media ${props => props.theme.breakpoints.tablet2} {
       max-width: 90%;
+      font-size: 3rem;
   }
  
 
-    @media ${props => props.theme.breakpoints.desktop2} {
+    /* @media ${props => props.theme.breakpoints.desktop2} {
       font-size: 5.5rem;
-    } 
+    }  */
   }
 
   h3 {
@@ -87,13 +90,13 @@ export const HeaderWrapper = styled.div`
     
 
     @media ${props => props.theme.breakpoints.tablet2} {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
   }
 
-    @media screen and (min-width: 768px) {
+    /* @media screen and (min-width: 768px) {
       font-size: 1.5rem;
       
-    }
+    } */
 
    
   }
@@ -134,7 +137,7 @@ export const HeaderWrapper = styled.div`
       
   }
 
-  @media ${props => props.theme.breakpoints.tablet2} {
+  /* @media ${props => props.theme.breakpoints.tablet2} {
     max-height: 824px;
       
       h1 {
@@ -145,7 +148,7 @@ export const HeaderWrapper = styled.div`
         font-size: 1rem;
       }
       
-    } 
+    }  */
 
     .hero-line1 {
     margin-bottom: 1.3em;

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Logo from "../../images/logo.svg"
 
 import { FooterWrapper, Content, FooterBranding, FooterDiv, SocialIcons, P, DIV, Copyright } from "./Footer.styles"
@@ -36,7 +35,7 @@ const Footer = () => {
            
             <span>
             P.O Box 40812
-            Pasadena, CA 91114-7872
+            Pasadena, CA 91114
             </span>
             </P>
             <P>
@@ -63,14 +62,21 @@ const Footer = () => {
             </Link>
             </DIV> */}
 
-            <DIV>     
+            <DIV className="social">     
             <h4>Follow Us</h4>
             <div className="line"></div>
             <SocialIcons>
                 
+            <a class="socialIcons" href="https://www.instagram.com/bungalowheavenpasadena/?hl=en" target="_blank" rel="noreferrer noopener">
             <InstagramIcon fontSize="large" />
-            <YouTubeIcon fontSize="large" />
+            </a>
+            <a class="socialIcons" href="https://www.facebook.com/bungalowheaven/" target="_blank" rel="noreferrer noopener">
             <FacebookIcon fontSize="large" />
+            </a>
+            <a class="socialIcons" href="https://www.youtube.com/watch?v=Parl3MJeOFs&ab_channel=VisitPasadena" target="_blank" rel="noreferrer noopener">
+            <YouTubeIcon fontSize="large" />
+            </a>
+            
             </SocialIcons>
             </DIV>
         </FooterDiv>

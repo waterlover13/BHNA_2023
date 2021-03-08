@@ -7,7 +7,7 @@ export const JoinWrapper = styled.section`
 `
 
 export const Content = styled.div`
-   max-width: 1290px;
+   max-width: 1280px;
     margin: 0 auto;
     text-align: center;
     color: ${props => props.theme.colors.light1};
@@ -18,7 +18,7 @@ export const Content = styled.div`
         font-family: ${props => props.theme.fonts.secondary};
         font-size: 24px;
         line-height: 1.2;
-        padding: 24px 0;
+        padding: 1rem 24px;
         margin-bottom: 2rem;
         letter-spacing: 0.5px;
 
@@ -30,7 +30,7 @@ export const Content = styled.div`
     }
 
     .support-btn{
-        padding: 10px 32px;
+      padding: 10px 32px;
       border: 2px solid #fff;
       color: #fff;
       border-radius: 4px;
@@ -38,7 +38,8 @@ export const Content = styled.div`
       transition: all 0.4s ease;
 
       @media ${props => props.theme.breakpoints.tablet2} {
-      min-width: 300px;
+      width: 300px;
+      margin: 0 auto;
        }
       
     }
@@ -67,7 +68,7 @@ export const Content = styled.div`
 
 
   @media ${props => props.theme.breakpoints.tablet2} {
-      padding: 0 20px;
+      padding: 0 24px;
        }
 
 `
@@ -80,8 +81,8 @@ export const BTN = styled.div`
     @media ${props => props.theme.breakpoints.tablet2} {
         display: flex;
         flex-direction: column;
-        margin: 2.3rem 0;
-        padding: 0 4rem;
+        margin: 2.3rem auto;
+        /* padding: 0 24px; */
        }
     
     

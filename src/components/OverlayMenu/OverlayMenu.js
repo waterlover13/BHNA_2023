@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { useMenuQuery } from "../../hooks/useMenuQuery";
-import { OverrideGlobalStyle, Overlay, Nav } from "./OverlayMenu.styles";
+import { OverrideGlobalStyle, Overlay, Nav, OverlayBG } from "./OverlayMenu.styles";
 
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
@@ -20,7 +20,7 @@ const OverlayMenu = ({ menuOpen }) => {
 
 
     return (
-        <>
+        <OverlayBG>
         <OverrideGlobalStyle menuOpen={menuOpen}/>
         <Overlay menuOpen={menuOpen}> 
                 <Nav>
@@ -32,7 +32,8 @@ const OverlayMenu = ({ menuOpen }) => {
                      <Link 
                      to={mainItem.url} 
                      className=""
-                     activeClassName="nav-active" 
+                     activeClassName="nav-active"
+                     
                      >
                         {mainItem.label}
                         {mainItem.childItems.nodes.length !== 0 && <KeyboardArrowDownIcon />}
@@ -66,7 +67,7 @@ const OverlayMenu = ({ menuOpen }) => {
                  )}
                 </Nav>    
         </Overlay>
-        </>
+        </OverlayBG>
     )
 }
 

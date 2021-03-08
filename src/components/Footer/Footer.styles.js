@@ -106,15 +106,29 @@ export const FooterBranding = styled.div`
 export const FooterDiv = styled.div`
   display: flex;
 
+  span {
+    color: white;
+    text-decoration: none;
+  }
+
   @media ${props => props.theme.breakpoints.tablet2} {
     flex-direction: column;
   }
    
+  .social {
+    width: 30%;
+  }
 `
 
 export const DIV = styled.div`
 width: 63%;
 margin-left: 2rem;
+
+  
+
+  .socialIcons {
+    color: white;
+  }
 
   h4 {
     font-family: "Libre Caslon Text", sans-serif;
@@ -151,7 +165,7 @@ margin-left: 2rem;
 export const SocialIcons = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 78%;
+    width: 90%;
     margin: 0 auto;
     
     @media ${props => props.theme.breakpoints.tablet2} {
