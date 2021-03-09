@@ -37,12 +37,51 @@ export const StyledImg = styled(GatsbyImage)`
 
 export const TourDetails = styled.div`
     width: 100%;
-    padding: 6rem 5rem 7rem 8.8rem;
+    padding: 6rem 5rem 5rem 8.8rem;
     
     margin-left: auto; 
     border-right: 6px solid #fff;
     
+    button {
+      margin-top: 1.3rem;
+      padding: 10px 32px;
+      border: none;
+      color: black;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      text-transform: uppercase;
     
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      outline: none;
+      cursor: pointer;
+
+      @media ${props => props.theme.breakpoints.tablet2} {
+      width: 80%;
+      margin: 1rem auto;
+       }
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .support-btn{
+      padding: 10px 32px;
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.4s ease;
+
+      @media ${props => props.theme.breakpoints.tablet2} {
+      width: 300px;
+      margin: 0 auto;
+       }
+      
+    }
 
     .tour__headline {
       font-size: 3.3rem;

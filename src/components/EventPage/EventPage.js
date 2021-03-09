@@ -4,8 +4,8 @@ import SEO from "../seo"
 import { getImage } from "gatsby-plugin-image"
 import { useEventInfoQuery } from "../../hooks/useEventInfoQuery"
 
-import { Wrapper, StyledImg, InnerWrapper, Paragraph } from "./EventPage.styles"
-import JoinBHNA from "../JoinBHNA/JoinBHNA"
+import { Wrapper, H3, StyledImg, InnerWrapper, Paragraph, SponsorWrapper, SponsorContent, StyledImg2, StyledImg3 } from "./EventPage.styles"
+
 
 const EventPage = () => {
      
@@ -15,9 +15,12 @@ const EventPage = () => {
     console.log(data, "baby")
 
     const imgData = getImage(data.tourImage2.localFile);
+    const imgData1 = getImage(data.sponsorImg1.localFile);
+    const imgData2 = getImage(data.sponsorImg2.localFile);
     const headline = data.tourHeadline;
     const para1 = data.tourParagraph;
     const para2 = data.tourParagraph2;
+    const sponsor = data.sponsorHeading;
 
     
 
@@ -38,7 +41,18 @@ const EventPage = () => {
                 </div>
                 </InnerWrapper>   
             </Wrapper>
-            <JoinBHNA />
+            
+
+            <SponsorWrapper>  
+                <SponsorContent>
+                <H3>Thank you to our <span className="g-sponsors">Gold Sponsors</span>  </H3>
+                    <div>
+                <StyledImg2 image={imgData1} alt="HomeTour" />
+                <StyledImg3 image={imgData2} alt="HomeTour" />
+                    </div>
+             
+                </SponsorContent>
+            </SponsorWrapper>
         </div>
     )
 }
