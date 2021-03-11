@@ -39,8 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        // url: `http://bhnav1test.local/graphql`,
-        baseURL: process.env.API_URL,
+        url: process.env.API_URL,
+        // baseURL: process.env.API_URL,
         protocol: process.env.API_PROTOCOL,
       },
     },
