@@ -30,7 +30,7 @@ export const CTAWrapper = styled.div`
   margin-bottom: 5rem;
   display: flex;
   flex-direction: row; */
- 
+  transition: all .3s ease;
 
 
   @media (min-width: 768px) {
@@ -41,13 +41,18 @@ export const CTAWrapper = styled.div`
    /* margin-bottom: 2rem;
    padding-bottom: 24px; */
   }
+
+  :hover {
+    
+    box-shadow: 1px 3px 6px 1px rgba(59, 59, 59, .12);
+  }
 `
 
 
 
 export const CTADetails = styled.div`
   text-decoration: none;
-  
+  padding: 12px;
 `
 
 export const CTATitle = styled.h3`

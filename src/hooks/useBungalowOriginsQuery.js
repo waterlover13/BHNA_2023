@@ -6,28 +6,12 @@ export const useBungalowOriginsQuery = () => {
   wpPage(databaseId: {eq: 132}) {
     uri
     ACF_BungalowOrigins {
-      description
-      title1
-      title2
-      title3
-      para1
-      para2
-      para3
-      para4
-      para5
-      para6
-      para7
-      para8
-      para9
-      para10
-      para11
-      para12
-      para13
-      para14
-      img1 {
+      section1
+      section2
+      sectionImg1 {
         localFile {
           childImageSharp {
-            fluid(maxWidth: 720) {
+            fluid(maxWidth: 700) {
               base64
               tracedSVG
               srcWebp
@@ -35,7 +19,7 @@ export const useBungalowOriginsQuery = () => {
               originalImg
               originalName
             }
-            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
           }
         }
       }

@@ -1,8 +1,11 @@
 import React from "react"
 import SEO from "../seo"
+import parse from 'html-react-parser'
+
 import { useWhatisBungalowQuery } from "../../hooks/useWhatisBungalowQuery"
 import { getImage } from "gatsby-plugin-image"
-import { Wrapper,StyledImg, Content, ContentCopy, ContentImg, ContentImg3, P } from "./WhatBungalow.styles"
+import { Wrapper,StyledImg, Content, Section, SectionCopy, SectionImg  } from "./WhatBungalow.styles"
+import "@wordpress/block-library/build-style/style.css"
 
 const WhatBungalow = () => {
     const {
@@ -10,38 +13,26 @@ const WhatBungalow = () => {
     } = useWhatisBungalowQuery();
     console.log(data, "what")
 
-    const imgData = getImage(data.img1.localFile);
-    const imgData3 = getImage(data.img3.localFile);
+    const imgData1 = getImage(data.sectionImg1.localFile);
+    const imgData2 = getImage(data.sectionImg2.localFile);
 
     return (
         <Wrapper>
         <SEO title="What is Bungalow Heaven?" />
         <Content>
-        <ContentCopy>
-        <P>{data.para1}</P>
-        <P>{data.para2}</P>
-        <P>{data.para3}</P>
-        <P>{data.para4}</P>
-        <P>{data.para5}</P>
-        <P>{data.para6}</P>
-        <P>{data.para7}</P>
-        <P>{data.para8}</P>
-        <P>{data.para9}</P>
-        <P>{data.para10}</P>
-        <P>{data.para11}</P>
-        <P>{data.para12}</P>
-        <P>{data.para13}</P>
+        
+        <Section>
+            <SectionCopy>
+            {parse(`${data.section1}`)}
+            </SectionCopy>
+            <SectionImg>
+            <StyledImg image={imgData1} alt="something" /> 
+            <StyledImg image={imgData2} alt="something" /> 
+            </SectionImg>
+        
+        </Section>
 
-        </ContentCopy>
-      
 
-       <ContentImg>
-       <StyledImg image={imgData} alt="something" />
-       </ContentImg>
-
-       <ContentImg3>
-       <StyledImg image={imgData3} alt="something" />
-       </ContentImg3>
        </Content>
         </Wrapper>
     )

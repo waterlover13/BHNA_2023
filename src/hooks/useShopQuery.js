@@ -13,6 +13,7 @@ export const useShopQuery = () => {
     query ShopQuery {
       product: wpPage(databaseId: {eq: 112}) {
         ACF_Shop {
+          linkBook
           productName1
           productName2
           productName3

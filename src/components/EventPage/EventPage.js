@@ -1,27 +1,25 @@
 import React from 'react'
 import HomeTourCover from "../HomeTourCover/HomeTourCover"
 import SEO from "../seo"
+import parse from 'html-react-parser'
 import { getImage } from "gatsby-plugin-image"
 import { useEventInfoQuery } from "../../hooks/useEventInfoQuery"
 
-import { Wrapper, H3, StyledImg, InnerWrapper, Paragraph, SponsorWrapper, SponsorContent, StyledImg2, StyledImg3 } from "./EventPage.styles"
+import { Section,  SectionCopy, SectionImg, Wrapper, H3, SponsorWrapper, SponsorContent, StyledImg, StyledImg2, StyledImg3 } from "./EventPage.styles"
 
+import "@wordpress/block-library/build-style/style.css"
 
 const EventPage = () => {
      
     const {
         wpPage: { ACF_EventTour: data },
     } = useEventInfoQuery();
-    console.log(data, "baby")
+    console.log(data, "Event")
 
-    const imgData = getImage(data.tourImage2.localFile);
-    const imgData1 = getImage(data.sponsorImg1.localFile);
-    const imgData2 = getImage(data.sponsorImg2.localFile);
-    const headline = data.tourHeadline;
-    const para1 = data.tourParagraph;
-    const para2 = data.tourParagraph2;
-    const sponsor = data.sponsorHeading;
-
+    
+    const imgData1 = getImage(data.sectionImg1.localFile);
+    const imgSponsor1 = getImage(data.sponsorImg1.localFile);
+    const imgSponsor2 = getImage(data.sponsorImg2.localFile);
     
 
     return (
@@ -30,26 +28,31 @@ const EventPage = () => {
             <HomeTourCover />
            
             <Wrapper>
-                <InnerWrapper>
-                <div>
-                <h2>{headline}</h2>
-                <Paragraph>{para1}</Paragraph>
-                <Paragraph>{para2}</Paragraph>
-                </div>
-                <div>
-                <StyledImg image={imgData} alt="HomeTour" />
-                </div>
-                </InnerWrapper>   
+            <Section>
+            <SectionCopy>
+            {parse(`${data.section1}`)}
+            <br />
+            {parse(`${data.section2}`)}
+            </SectionCopy>
+
+            <SectionImg>
+            <StyledImg image={imgData1} alt="something" /> 
+            </SectionImg>
+            </Section> 
+
+         
             </Wrapper>
             
 
             <SponsorWrapper>  
                 <SponsorContent>
-                <H3>Thank you to our <span className="g-sponsors">Gold Sponsors</span>  </H3>
-                    <div>
-                <StyledImg2 image={imgData1} alt="HomeTour" />
-                <StyledImg3 image={imgData2} alt="HomeTour" />
-                    </div>
+                <H3>Thank you to our <span className="g-sponsors">Gold Sponsors</span>  
+                </H3>
+                <div>
+                <StyledImg2 image={imgSponsor1} alt="HomeTour" />
+                
+                <StyledImg3 image={imgSponsor2} alt="HomeTour" />
+                </div>
              
                 </SponsorContent>
             </SponsorWrapper>

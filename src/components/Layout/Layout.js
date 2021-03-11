@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer"
 import NationalRegister from "../NationalRegister/NationalRegister"
 
 // Styles
+
 import { ContainerWrapper, Primary, GlobalStyles } from "./Layout.styles"
 import { ThemeProvider } from "styled-components"
 import Theme from "../../themes/theme.js"

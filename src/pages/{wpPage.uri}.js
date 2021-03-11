@@ -10,7 +10,7 @@ import BungalowOrigins from "../components/BungalowOrigins/BungalowOrigins"
 import LandmarkPage from "../components/LandmarkPage/LandmarkPage"
 import EventPage from "../components/EventPage/EventPage"
 import ShopPage from "../components/ShopPage/ShopPage"
-
+import BuildingReqPage from "../components/BuildingReqPage/BuildingReqPage"
 
 import { Content, Wrapper, ContentWrapper, PageContent } from "../styles/Page.styles"
 import BoDPage from "../components/BoDPage/BoDPage"
@@ -25,7 +25,8 @@ const PageTemplate = ({ data }) => {
  
  
   const uriEvents = `/events/bungalow-heaven-home-tour/`
-  const uriLandmark = `/landmark-information/`
+  const uriLandmark = `/landmark-information/landmark-faq/`
+  const uriBuildingReq = `/landmark-information/building-requirements/`
   const uriOrigins = `/our-history/origins/`
   const uriEarlyHistory = `/our-history/early-history/`
   const uriBoD = `/about-us/board-of-directors/`
@@ -54,6 +55,10 @@ return (
            <LandmarkPage />
         ) : null }
 
+      {data.wpPage.uri===uriBuildingReq ? (
+        <BuildingReqPage />
+        ) : null }
+
         {data.wpPage.uri===uriOrigins ? (
           <BungalowOrigins />
         ) : null }
@@ -69,6 +74,7 @@ return (
           {data.wpPage.uri===uriBoD ? (
              <BoDPage />
             ) : null }
+        
 
 
         <Wrapper>

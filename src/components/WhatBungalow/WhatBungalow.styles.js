@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `
 
 export const Content = styled.div`
-max-width: ${props => props.theme.max.large};
+/* max-width: ${props => props.theme.max.large};
    margin: 4rem auto;
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -30,35 +30,52 @@ grid-gap: 2rem;
     max-width: ${props => props.theme.max.medium};
    
    
-  }
+  } */
 `
 
 
-export const StyledImg = styled(GatsbyImage)`
-  /* max-height: 460px; */
-  /* margin-bottom: 60px; */
-  max-width: 600px;
+export const Section = styled.section`
+  margin: 72px auto 4rem auto; 
   
-  @media ${props => props.theme.breakpoints.tablet2} {
-    max-height: 100%;
-    /* height: 700px; */
-    width: 100%;
-  }
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
 
   @media ${props => props.theme.breakpoints.tablet2} {
-    max-width: 100%;
-    max-height: 580px;
-  } 
+    grid-template-columns: 1fr ;
+  }
+  
+`
+
+export const SectionCopy = styled.p`
+  grid-column: 1;
+  line-height: 1.5;
+  
+`
+
+export const SectionImg = styled.div`
+  grid-column: 2;
+  padding: 10px 0 1rem 0;
+
+  @media ${props => props.theme.breakpoints.tablet2} {
+    grid-column: 1;
+    padding: 0;
+  }
+`
+
+export const StyledImg = styled(GatsbyImage)`
+  margin-bottom: 5rem;
 `
 
 export const ContentCopy = styled.div`
-  grid-column: 1;
+  /* grid-column: 1;
   grid-area: L;
 
     @media ${props => props.theme.breakpoints.tablet2} {
       display: block;
       grid-area: auto;
-  }
+  } */
     
 `
 

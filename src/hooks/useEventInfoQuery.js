@@ -2,64 +2,62 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export const useEventInfoQuery = () => {
     const data = useStaticQuery(graphql`
-        query EventInfoQuery {
+    query EventTourQuery {
             wpPage(databaseId: {eq: 176}) {
-                ACF_EventTour {
-                
-                tourImage2 {
-                    localFile {
+              ACF_EventTour {
+                section1
+                section2
+                sectionImg1 {
+                  localFile {
                     childImageSharp {
-                        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-                        fluid(maxWidth: 720) {
+                      fluid(maxWidth: 700) {
                         base64
                         tracedSVG
                         srcWebp
                         srcSetWebp
                         originalImg
                         originalName
-                        }
+                      }
+                      gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
                     }
-                    }
+                  }
                 }
-                tourHeadline
-                sponsorHeading
-                tourParagraph
-                tourParagraph2
+                sponsorLink1
                 sponsorLink2
-              sponsorImg2 {
-                localFile {
-                  childImageSharp {
-                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-                    fluid(maxWidth: 500) {
-                      base64
-                      tracedSVG
-                      srcWebp
-                      srcSetWebp
-                      originalImg
-                      originalName
+                sponsorHeading
+                sponsorImg1 {
+                  localFile {
+                    childImageSharp {
+                      fluid(maxWidth: 700) {
+                        base64
+                        tracedSVG
+                        srcWebp
+                        srcSetWebp
+                        originalImg
+                        originalName
+                      }
+                      gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                    }
+                  }
+                }
+                sponsorImg2 {
+                  localFile {
+                    childImageSharp {
+                      fluid(maxWidth: 700) {
+                        base64
+                        tracedSVG
+                        srcWebp
+                        srcSetWebp
+                        originalImg
+                        originalName
+                      }
+                      gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
                     }
                   }
                 }
               }
-              sponsorImg1 {
-                localFile {
-                  childImageSharp {
-                    fluid(maxWidth: 500) {
-                      base64
-                      tracedSVG
-                      srcWebp
-                      srcSetWebp
-                      originalImg
-                      originalName
-                    }
-                    gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-                  }
-                }
-              }
             }
-
-         }
-            }
+          }
 
     `) 
     return data;

@@ -5,6 +5,7 @@ module.exports = {
     author: `Demi Minjarez`,
   },
   plugins: [
+    `html-react-parser`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

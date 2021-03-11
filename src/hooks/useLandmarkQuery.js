@@ -35,31 +35,26 @@ export const useLandmarkQuery = () => {
           }
         }
       }
+
+      section1
+      sectionImg1 {
+        localFile {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              base64
+              tracedSVG
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
+            }
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
       description
-      h3Question1
-      h3Question2
-      h3Question3
-      h3Question4
-      h3Question5
-      h3Question6
-      h3Question7
-      h3Question8
-      h3Question9
-      h3Question10
-      paragraph1
-      paragraph2
-      paragraph3
-      paragraph4
-      paragraph5
-      paragraph6
-      paragraph7
-      paragraph8
-      paragraph9
-      paragraph10
-      paragraph102
-      paragraph103
-      paragraph10Link
-      paragraph10Link2
+      
+      
     }
   }
         }

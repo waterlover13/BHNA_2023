@@ -5,31 +5,16 @@ export const useEarlyHistoryQuery = () => {
         query EarlyHistory {
   wpPage(databaseId: {eq: 129}) {
     ACF_EarlyHistory {
-      title1
-      title2
-      title3
-      title4
-      title5
-      title6
-      para1
-      para2
-      para3
-      para4
-      para5
-      para6
-      para7
-      para8
-      para9
-      para10
-      para11
-      para12
-      para13
-      para14
-      img1 {
+      section1
+      section2
+      section3
+      section4
+      section5
+      section6
+      sectionImg1 {
         localFile {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
-            fluid(maxWidth: 720) {
+            fluid(maxWidth: 700) {
               base64
               tracedSVG
               srcWebp
@@ -37,6 +22,22 @@ export const useEarlyHistoryQuery = () => {
               originalImg
               originalName
             }
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
+        }
+      }
+      sectionImg2 {
+        localFile {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              base64
+              tracedSVG
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
+            }
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
       }

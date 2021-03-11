@@ -29,7 +29,7 @@ const JoinBHNA = () => {
            <BTN>
             <a 
             className="support-btn" 
-            href={support.ACF_HomePage.membershipLink}  
+            href={support.ACF_HomePage.volunteerLink}  
             target="_blank" rel="noopener noreferrer">
                 Volunteer 
             </a>
@@ -38,7 +38,7 @@ const JoinBHNA = () => {
            <BTN>
             <a 
             className="support-btn" 
-            href={support.ACF_HomePage.membershipLink}  
+            href={support.ACF_HomePage.supportBungalowLink}  
             target="_blank" rel="noopener noreferrer">
                 Support Today 
             </a>
