@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: ".env",
+})
+
 module.exports = {
   siteMetadata: {
     title: `Bungalow Heaven Neighborhood Association`,
@@ -6,6 +10,7 @@ module.exports = {
   },
   plugins: [
     `html-react-parser`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -35,6 +40,8 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         url: `http://bhnav1test.local/graphql`,
+        baseURL: process.env.API_URL,
+        protocol: process.env.API_PROTOCOL,
       },
     },
     
