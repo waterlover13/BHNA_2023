@@ -26,7 +26,6 @@
     "gatsby-plugin-styled-components": "^3.9.0",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-source-wordpress": "^4.0.1",
-    "gatsby-source-wordpress-experimental": "^7.0.3",
     "gatsby-source-wpgraphql-images": "^1.1.0",
     "gatsby-transformer-sharp": "^2.11.0",
     "html-react-parser": "^1.2.4",
