@@ -39,9 +39,9 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.API_URL,
-        // baseURL: process.env.API_URL,
-        protocol: process.env.API_PROTOCOL,
+        url: process.env.GATSBY_API_URL,
+        baseURL: process.env.GATSBY_API_URL,
+        protocol: process.env.GATSBY_API_PROTOCOL,
       },
     },
     
