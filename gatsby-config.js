@@ -1,7 +1,3 @@
-require("dotenv").config({
-  path: ".env",
-})
-
 module.exports = {
   siteMetadata: {
     title: `Bungalow Heaven Neighborhood Association`,
@@ -39,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `http://bhnav1test.local/graphql`,
+        url: `https://bhnav1.bungalowheaven.org/graphql`,
       
       },
     },
