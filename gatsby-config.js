@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     `html-react-parser`,
-    // `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
