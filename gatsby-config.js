@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     `html-react-parser`,
-    `gatsby-plugin-netlify`,
+    // `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.GATSBY_API_URL,
+        url: `http://bhnav1test.local/graphql`,
       
       },
     },
