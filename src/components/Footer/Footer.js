@@ -4,7 +4,7 @@ import Logo from "../../images/logo.svg"
 import { FooterWrapper, Content, FooterBranding, FooterDiv, SocialIcons, P, DIV, Copyright } from "./Footer.styles"
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import YouTubeIcon from '@material-ui/icons/Youtube';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
