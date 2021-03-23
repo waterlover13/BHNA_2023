@@ -6,6 +6,7 @@ export const useBungalowOriginsQuery = () => {
   wpPage(databaseId: {eq: 132}) {
     uri
     ACF_BungalowOrigins {
+      description
       section1
       section2
       sectionImg1 {

@@ -75,8 +75,12 @@ export const Content = styled.div`
 
 
 export const BTN = styled.div`
-    margin-right: 2rem ;
+
+    :not(:last-child) {
+      margin-right: 2rem ;
+    }
     display: inline-block;
+  
 
     @media ${props => props.theme.breakpoints.tablet2} {
         display: flex;

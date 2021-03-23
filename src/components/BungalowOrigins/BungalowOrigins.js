@@ -4,7 +4,7 @@ import parse from 'html-react-parser'
 
 import {useBungalowOriginsQuery } from "../../hooks/useBungalowOriginsQuery"
 import { getImage } from "gatsby-plugin-image"
-import { Wrapper, StyledImg, Content,Section, SectionCopy, SectionImg } from "./BungalowOrigins.styles"
+import { Wrapper, StyledImg, Content,Section, SectionCopy, SectionImg, H3 } from "./BungalowOrigins.styles"
 import "@wordpress/block-library/build-style/style.css"
 
 const BungalowOrigins = () => {
@@ -19,6 +19,7 @@ const BungalowOrigins = () => {
         <SEO title="Bungalow Heaven Origins" />
         <Content>
         <Section>
+            <H3>{data.description}</H3>
             <SectionCopy>
             {parse(`${data.section1}`)}
             </SectionCopy>

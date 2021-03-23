@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
 `
 
 
+
+
 export const Section = styled.section`
   margin: 72px auto 4rem auto; 
   
@@ -115,9 +117,10 @@ export const P = styled.p`
 
 export const H3 = styled.h3`
   color: ${props => props.theme.colors.dark1};
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "libre caslon text", serif;
-  line-height: 1.4;
+  font-style: italic;
+  line-height: 1.5;
   padding-bottom: 0.5rem; 
     
 `
