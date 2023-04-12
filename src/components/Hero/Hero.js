@@ -35,7 +35,7 @@ const Hero = () => {
                 Historic Homes & Artisan Demonstrations</h3>
                 </div>
 
-                <Link to={heroLink} className="tour-cta_btn">
+                <Link to="/events/bungalow-heaven-home-tour" className="tour-cta_btn">
                     Learn More
                 </Link>
                 </Content>
