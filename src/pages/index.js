@@ -18,6 +18,9 @@ const IndexPage = () => (
     <SEO title="Bungalow Heaven" />
 
     <Hero />
+    <Hero />
+    <Hero />
+    <HistorySection />
     <HistorySection />
     <JoinBHNA />
     
