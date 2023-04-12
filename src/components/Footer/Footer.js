@@ -41,7 +41,7 @@ const Footer = () => {
             <P>
             <EmailIcon />
             <span>
-            bhna@bungalowheaven.org           
+            <a href = "mailto: bhna@bungalowheaven.org">bhna@bungalowheaven.org</a>
             </span>
             </P>
 
