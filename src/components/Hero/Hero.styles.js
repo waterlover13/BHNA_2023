@@ -119,6 +119,7 @@ export const HeaderWrapper = styled.div`
       border-radius: 4px;
       text-decoration: none;
       transition: all 0.4s ease;
+      margin-right: 30px;
 
       @media ${props => props.theme.breakpoints.tablet2} {
         padding: 8px 24px;
