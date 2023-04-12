@@ -12,7 +12,7 @@ return (
 <StyledImg image={img} alt="Page Hero" />
 <PageWrapper>
     <Content>
-       <h1>TEST{title}</h1>
+       <h1>{title}</h1>
        
     </Content>
 </PageWrapper>
