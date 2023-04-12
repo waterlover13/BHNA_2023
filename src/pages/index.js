@@ -9,7 +9,6 @@ export default function Home({ data }) {
   //highlight-line
   return (
   <Layout>
-  <h1>Welcome to my BHNA home page</h1>
     <SEO title="Bungalow Heaven" />
 
     <Hero />
