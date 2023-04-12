@@ -30,7 +30,7 @@ export const useCTAQuery = () => {
             cta3Link
             cta3Text
             cta3Title
-            what_is_link
+            whatIsLink
             
             cta1Image {
               ...ctaImage
