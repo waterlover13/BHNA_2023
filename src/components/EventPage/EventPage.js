@@ -18,8 +18,8 @@ const EventPage = () => {
 
     
     const imgData1 = getImage(data.sectionImg1.localFile);
-    const imgSponsor1 = getImage(data.sponsorImg1.localFile);
-    const imgSponsor2 = getImage(data.sponsorImg2.localFile);
+//    const imgSponsor1 = getImage(data.sponsorImg1.localFile);
+//    const imgSponsor2 = getImage(data.sponsorImg2.localFile);
     
 
     return (
@@ -44,18 +44,18 @@ const EventPage = () => {
             </Wrapper>
             
 
-            <SponsorWrapper>  
-                <SponsorContent>
-                <H3>Thank you to our <span className="g-sponsors">Gold Sponsors</span>  
-                </H3>
-                <div>
-                <StyledImg2 image={imgSponsor1} alt="HomeTour" />
-                
-                <StyledImg3 image={imgSponsor2} alt="HomeTour" />
-                </div>
-             
-                </SponsorContent>
-            </SponsorWrapper>
+//            <SponsorWrapper>  
+//                <SponsorContent>
+//                <H3>Thank you to our <span className="g-sponsors">Gold Sponsors</span>  
+//                </H3>
+//                <div>
+//                <StyledImg2 image={imgSponsor1} alt="HomeTour" />
+//                
+//                <StyledImg3 image={imgSponsor2} alt="HomeTour" />
+//                </div>
+//             
+//                </SponsorContent>
+//            </SponsorWrapper>
         </div>
     )
 }
