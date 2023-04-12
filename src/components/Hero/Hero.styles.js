@@ -63,13 +63,13 @@ export const HeaderWrapper = styled.div`
  
 
   h1 {
-    font-size: 5rem;
+    font-size: 4.4rem;
     font-weight: 600;
     color: #fff;
     text-transform: none;
     text-align: left;
     font-family: ${props => props.theme.fonts.secondary};
-    max-width: 75%;
+    max-width: 80%;
     
     @media ${props => props.theme.breakpoints.tablet2} {
       max-width: 90%;
@@ -135,7 +135,7 @@ export const HeaderWrapper = styled.div`
   .hero__details{
       color: #C0DF3C;
       font-weight: bold;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
   }
 
   /* @media ${props => props.theme.breakpoints.tablet2} {
