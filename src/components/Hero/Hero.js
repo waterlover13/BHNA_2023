@@ -38,6 +38,9 @@ const Hero = () => {
                 <Link to="/events/bungalow-heaven-home-tour" className="tour-cta_btn">
                     Learn More
                 </Link>
+                <a href="https://www.eventbrite.com/e/33rd-bungalow-heaven-home-tour-tickets-541822805597" className="tour-cta_btn">
+                    Buy Tickets
+                </a>
                 </Content>
             </HeaderWrapper> 
         </Wrapper>
