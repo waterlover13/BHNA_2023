@@ -15,6 +15,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+  <h1>Welcome to my BHNA home page</h1>
     <SEO title="Bungalow Heaven" />
 
     <Hero />
