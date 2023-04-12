@@ -13,7 +13,7 @@ import SEO from "../components/seo"
 
 
 
-const IndexPagex = () => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Bungalow Heaven" />
 
@@ -26,7 +26,7 @@ const IndexPagex = () => (
  </Layout>
 )
 
-export default IndexPagex
+export default IndexPage
 
 
 
