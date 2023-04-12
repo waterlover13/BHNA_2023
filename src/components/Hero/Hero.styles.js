@@ -158,5 +158,10 @@ export const HeaderWrapper = styled.div`
     margin-bottom: 2rem;
    }
 
+  .tour__info {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+   }
+
 
 `
