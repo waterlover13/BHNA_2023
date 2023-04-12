@@ -41,7 +41,7 @@ const Hero = () => {
                 <div>
                   <p className="tour__info"> 
                  <br /></p>
-                  <p className="tour__info"> <b>April 30, 2023</b> | Tickets now Available on Eventbrite
+                  <p className="tour__info">
                  <br /></p>
                 </div>
                  <Link to="https://www.eventbrite.com/e/33rd-bungalow-heaven-home-tour-tickets-541822805597" className="tour-cta_btn">
