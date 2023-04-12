@@ -40,7 +40,7 @@ export const Content = styled.div`
 
 export const HeaderWrapper = styled.div`
   
-  background: linear-gradient(180deg, rgba(100,0,0,.8), rgba(32, 31, 31, .5) 100%); 
+  background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(32, 31, 31, .3) 100%); 
   position: absolute;
   top: 0;
   left: 0;
