@@ -43,19 +43,6 @@ const EventPage = () => {
          
             </Wrapper>
             
-
-            <SponsorWrapper>  
-                <SponsorContent>
-                <H3>Thank you to our <span className="g-sponsors">Gold Sponsors</span>  
-                </H3>
-                <div>
-                <StyledImg2 image={imgSponsor1} alt="HomeTour" />
-                
-                <StyledImg3 image={imgSponsor2} alt="HomeTour" />
-                </div>
-             
-                </SponsorContent>
-            </SponsorWrapper>
         </div>
     )
 }
