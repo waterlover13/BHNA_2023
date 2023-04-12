@@ -22,14 +22,14 @@ const HomeTourCover = () => {
             <h2>31st Bungalow Heaven Home Tour</h2>  
             <Seperator />
             <div>
-                <p className="tour__headline">As Seen Through A Lens</p>
+                <p className="tour__headline">History in Bloom</p>
                 <p className="tour__sub-headline">Historic Homes & Artisan Demonstrations</p>
             </div>
             <Seperator />
             <div>
-                <p className="tour__online">Join us online</p>
-                <p className="tour__info"> <b>April 22-28, 2021</b> | Tickets now Available on Eventbrite</p>
-                <a href="https://www.eventbrite.com/e/31st-bungalow-heaven-home-tour-as-seen-through-a-lens-tickets-142046383557" rel="noopener noreferrer" target="_blank">
+                <p className="tour__online">Join us in person</p>
+                <p className="tour__info"> <b>April 30, 2023</b> | Tickets now Available on Eventbrite</p>
+                <a href="https://www.eventbrite.com/e/33rd-bungalow-heaven-home-tour-tickets-541822805597" rel="noopener noreferrer" target="_blank">
                     <button>
                         Buy Tickets
                     </button>
