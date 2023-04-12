@@ -119,6 +119,7 @@ export const HeaderWrapper = styled.div`
       border-radius: 4px;
       text-decoration: none;
       transition: all 0.4s ease;
+      margin-top: 30px;
       margin-right: 30px;
       margin-bottom: 75px;
       
