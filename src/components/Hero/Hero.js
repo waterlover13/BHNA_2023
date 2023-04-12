@@ -24,7 +24,7 @@ const Hero = () => {
                 <Content>
                 <div className="hero-line1">
                 
-                <span className="hero__details date">SAVE THE DATE: April 30, 2023</span>
+                <span className="hero__details date">April 30, 2023</span>
                 <h1 className="hero__title">33rd Bungalow Heaven Home Tour</h1>
                 
                 </div>
