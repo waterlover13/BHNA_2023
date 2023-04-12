@@ -5,7 +5,9 @@ import HistorySection from "../components/HistorySection/HistorySection"
 import JoinBHNA from "../components/JoinBHNA/JoinBHNA"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+export default function Home({ data }) {
+  //highlight-line
+  return (
   <Layout>
   <h1>Welcome to my BHNA home page</h1>
     <SEO title="Bungalow Heaven" />
@@ -16,5 +18,6 @@ const IndexPage = () => (
     
  </Layout>
 )
+}
 
 export default IndexPage
