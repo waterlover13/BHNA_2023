@@ -43,16 +43,10 @@ const JoinBHNA = () => {
                 Support Today 
             </a>
             </BTN>
-           <BTN>
-            <a 
-            className="support-btn" 
-            href={support.ACF_HomePage.supportBungalowLink}  
-            target="_blank" rel="noopener noreferrer">
-                Support Today 
-            </a>
-            </BTN>
-            </div>
-            </Content>
+           <p>
+           </p>
+           </div>
+           </Content>
         </JoinWrapper>
     )
 }
