@@ -39,13 +39,12 @@ const Hero = () => {
                     Learn More
                 </Link>
                 <div>
+                  <p   </p>
                   <p className="tour__info"> <b>April 30, 2023</b> | Tickets now Available on Eventbrite</p>
-                  <a href="https://www.eventbrite.com/e/33rd-bungalow-heaven-home-tour-tickets-541822805597" rel="noopener noreferrer" target="_blank">
-                      <button>
-                          Buy Tickets
-                      </button>
-                  </a>
                 </div>
+                 <Link to="https://www.eventbrite.com/e/33rd-bungalow-heaven-home-tour-tickets-541822805597" className="tour-cta_btn">
+                    Buy Tickets
+                 </Link>   
                 </Content>
             </HeaderWrapper> 
         </Wrapper>
