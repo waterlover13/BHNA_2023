@@ -7,7 +7,7 @@ import { getImage } from "gatsby-plugin-image"
 import { Section, SectionCopy, SectionImg, Wrapper, StyledImg, Content } from "./EarlyHistory.styles"
 import "@wordpress/block-library/build-style/style.css"
 
-const EarlyHistory = () => {
+cojjnst EarlyHistory = () => {
     const {
         wpPage: { ACF_EarlyHistory: data},
     } = useEarlyHistoryQuery(); 
