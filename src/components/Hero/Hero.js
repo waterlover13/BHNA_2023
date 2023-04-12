@@ -24,14 +24,14 @@ const Hero = () => {
                 <Content>
                 <div className="hero-line1">
                 
-                <span className="hero__details date">SAVE THE DATE: April 22-28, 2021</span>
-                <h1 className="hero__title">31st Bungalow Heaven Home Tour</h1>
+                <span className="hero__details date">SAVE THE DATE: April 30, 2023</span>
+                <h1 className="hero__title">33rd Bungalow Heaven Home Tour</h1>
                 
                 </div>
 
                 <div className="hero-line2">
-                <span className="hero__details">Join Us Online</span>
-                <h3>As Seen Through a Lens: 
+                <span className="hero__details">Join Us in Person</span>
+                <h3>History in Bloom: 
                 Historic Homes & Artisan Demonstrations</h3>
                 </div>
 
