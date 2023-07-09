@@ -11,7 +11,7 @@ export default function Home({ data }) {
   <Layout>
     <SEO title="Bungalow Heaven" />
 
-//    <Hero />
+
     <HistorySection />
     <JoinBHNA />
     
