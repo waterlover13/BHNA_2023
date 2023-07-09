@@ -37,7 +37,7 @@ const HomeTourCover = () => {
             </div>
 
 
-
+            </TourDetails>
 
             
            <StyledImg image={imgData} alt="HomeTour" />
